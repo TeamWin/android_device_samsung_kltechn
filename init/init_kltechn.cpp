@@ -49,26 +49,22 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 		/* klteduoszn */
 		property_set("ro.product.model", "SM-G9006W");
 		property_set("ro.product.name", "klteduoszn");
-		property_set("ro.product.device", "klteduoszn");
 	} else if (strstr(bootloader, "G9008W")) {
 		/* klteduoszm */
 		property_set("ro.product.model", "SM-G9008W");
 		property_set("ro.product.name", "klteduoszm");
-		property_set("ro.product.device", "klteduoszm");
 	} else if (strstr(bootloader, "G9009W")) {
 		/* klteduosctc */
 		property_set("ro.product.model", "SM-G9009W");
 		property_set("ro.product.name", "klteduosctc");
-		property_set("ro.product.device", "klteduosctc");
 	} else if (strstr(bootloader, "G9008V")) {
 		/* kltezm */
 		property_set("ro.product.model", "SM-G9008V");
 		property_set("ro.product.name", "kltezm");
-		property_set("ro.product.device", "kltezm");
 	} else {
 		/* kltezn */
 		property_set("ro.product.model", "SM-G9006V");
 		property_set("ro.product.name", "kltezn");
-		property_set("ro.product.device", "kltezn");
 	}
+	property_set("ro.product.device", "klte");
 }
